@@ -9,3 +9,6 @@ def test_de_un_numero():
 
 def test_de_dos_numeros():
     assert sumar("1,2") == 3
+
+def test_multiples_numeros():
+    assert sumar("1,2,3,5,8,13") == 32

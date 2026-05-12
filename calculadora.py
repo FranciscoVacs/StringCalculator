@@ -1,8 +1,8 @@
 def sumar(numeros):
     
-    if numeros == "":
+    if not numeros :
         return 0
-    elif len(numeros) == 1:
-        return int(numeros)
-    else:
-        return int(numeros[0]) + int(numeros[2])
+    partes = numeros.split(",")
+    return sum(int(n) for n in partes)
+
+    
