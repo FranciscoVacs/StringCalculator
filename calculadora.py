@@ -1,6 +1,6 @@
-def sumar(numeros=""):
+def sumar(numeros):
     
     if numeros == "":
         return 0
-
-    return sum(map(int, numeros.split(",")))
+    elif len(numeros) == 1:
+        return int(numeros)
