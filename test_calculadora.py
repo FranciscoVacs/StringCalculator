@@ -7,3 +7,5 @@ def test_vacio():
 def test_de_un_numero():
     assert sumar("5") == 5
 
+def test_de_dos_numeros():
+    assert sumar("1,2") == 3
