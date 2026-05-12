@@ -12,3 +12,6 @@ def test_de_dos_numeros():
 
 def test_multiples_numeros():
     assert sumar("1,2,3,5,8,13") == 32
+
+def test_barra_n():
+    assert sumar("1\n2,3") == 6
