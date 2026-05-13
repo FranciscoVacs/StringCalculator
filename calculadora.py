@@ -9,8 +9,16 @@ def sumar(numeros):
         numeros = numeros.replace("\n", ",")
         delimitador = ","
     
-    
+
     lista_numeros = numeros.split(delimitador)
+
+    negativos = []
+    for n in lista_numeros:
+        if int(n) < 0:
+            negativos.append(n)
+    
+    if negativos:
+        return f"Negativos no permitidos: {', '.join(negativos)}"
 
     return sum(int(n) for n in lista_numeros)
 

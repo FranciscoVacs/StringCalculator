@@ -18,3 +18,6 @@ def test_barra_n():
 
 def test_delimitador_configurable():
     assert sumar("//;\n1;3;6;4") == 14
+
+def test_de_numeros_negativos():
+    assert sumar("-1,2,-3") == "Negativos no permitidos: -1, -3"
