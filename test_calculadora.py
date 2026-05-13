@@ -15,3 +15,6 @@ def test_multiples_numeros():
 
 def test_barra_n():
     assert sumar("1\n2,3") == 6
+
+def test_delimitador_configurable():
+    assert sumar("//;\n1;3;6;4") == 14
