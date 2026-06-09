@@ -27,7 +27,7 @@ jobs:
     
     - name: Correr pruebas
       run: |
-        pytest --cov=test_calculadora.py --cov-report=xml
+        pytest --cov=. --cov-report=xml
 
     - name: Escaneo de SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
